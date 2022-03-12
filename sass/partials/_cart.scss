@@ -1,0 +1,128 @@
+.selected__container {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  gap: 20px;
+  h2,
+  h3 {
+    color: getColor(black);
+    text-shadow: none;
+  }
+  h2 {
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }
+}
+
+.selected__product {
+  background: getColor(white);
+  @extend %main-border;
+  padding: 20px;
+  display: flex;
+}
+
+.selected__product-img {
+  @extend %product-image;
+  width: 250px;
+  height: 170px;
+  @extend %main-border;
+  opacity: 0.8;
+  transition: 0.6s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.selected__product-details {
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  h3 {
+    position: absolute;
+    margin-bottom: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  input {
+    position: relative;
+    bottom: -1.15px;
+    width: 23px;
+    font-size: 20px;
+    font-family: $font-main;
+    padding: 5px 0px 5px 10px;
+    pointer-events: none;
+    border: none;
+  }
+  /*disable arrows from Number input */
+  /**Chrome, Safari, Edge, Opera**/
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /**Firefox**/
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .amount-symbol {
+    @extend %main-border;
+    padding: 2px;
+    border-radius: 50%;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  .link {
+    color: getColor(black);
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .remove-product {
+    color: getColor(red);
+    &:hover {
+      color: getColor(red);
+    }
+  }
+}
+.product-details__column,
+.selected__total-content,
+.selected__total-sum,
+.selected__total-products div {
+  display: flex;
+  justify-content: space-between;
+}
+.product-details__column,
+.selected__total-content {
+  flex-direction: column;
+}
+
+.selected__total-content {
+  position: relative;
+  @extend %main-border;
+  padding: 20px;
+  background: getColor(white);
+  min-height: 250px;
+  h2 {
+    border-bottom: 1px solid getColor(black);
+  }
+}
+
+.selected__total-sum {
+  border-bottom: 1px solid getColor(black);
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.selected__total-products p {
+  margin: 5px 0px 5px 0px;
+}

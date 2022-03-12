@@ -1,0 +1,20 @@
+/*Fonts*/
+$font-main: "Bebas Neue", sans-serif;
+$font-text: "PT Sans", sans-serif;
+
+/*colors*/
+$colors: (
+  blue: #0c7eca,
+  lightblue: #d1e7ec,
+  purple: #2f00af,
+  orange: #ff9100,
+  green: #49dc99,
+  grey: #dbdbdb,
+  white: #ffffff,
+  red: #dc4949,
+  black: #000000,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}

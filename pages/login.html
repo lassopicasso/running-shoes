@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/70984d4de4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="description" content="Login so you can add and edit products." />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <a href="/"><img class="header__logo" src="../images/logo.png" alt="logo" /></a>
+        <nav class="navbar">
+          <div class="navbar__links"></div>
+          <div class="navbar__hamburger"></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Login</h1>
+      <div class="form__container">
+        <div class="form__error-message"></div>
+        <form>
+          <label for="email" class="label-email">Email:</label>
+          <input type="text" id="email" />
+          <p class="email-error input-error">Format: "example@example.com"</p>
+          <label for="password" class="label-password">Password:</label>
+          <input type="password" id="password" />
+          <p class="password-error input-error">Minimum 3 characters</p>
+
+          <button type="submit" class="btn cta">Login</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <i class="fas fa-copyright"> <span>Running Shoes</span></i>
+      </div>
+      <div class="community">
+        <h3>Community</h3>
+        <div class="community__icons">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/login.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.cta {
+  @extend %cta;
+}
+
+/* Form */
+.feature__ctas {
+  display: flex;
+  margin-top: 3px;
+}
+
+.feature__cta {
+  @extend %cta-small;
+  padding: 5px 20px;
+  margin: 2px;
+  cursor: default;
+  width: 30px;
+
+  &-yes:hover:not(.feature__cta--active) {
+    cursor: pointer;
+    background: rgba(getColor(green), 0.5);
+  }
+  &--active:not(.feature__cta-no) {
+    color: getColor(white);
+    background: getColor(green);
+  }
+  &-no:hover:not(.feature__cta--active) {
+    cursor: pointer;
+    background: rgba(getColor(red), 0.5);
+  }
+  &--active:not(.feature__cta-yes) {
+    color: getColor(white);
+    background: getColor(red);
+  }
+}
+
+/* Cart */
+.cart__cta-container {
+  margin: 20px auto 0px auto;
+  .cart__cta {
+    display: block;
+  }
+}
+
+/* Edit Form */
+.edit-btn__wrapper {
+  display: flex;
+}
+
+.delete-btn {
+  background: rgba(getColor(red), 0.7) !important;
+  &:hover {
+    background: getColor(red) !important;
+  }
+}
+
+/* Sortlists*/
+
+.sort {
+  div {
+    padding: 5px;
+  }
+  &__wrapper {
+    display: flex;
+    margin-top: 5px;
+    gap: 3px;
+    div {
+      display: flex;
+      gap: 3px;
+    }
+  }
+  &__cta {
+    @extend %cta-small;
+    margin-bottom: 5px;
+    width: 100px;
+    &:hover:not(.sort__cta--active) {
+      cursor: pointer;
+      background: rgba(getColor(green), 0.5);
+    }
+    &--active:hover {
+      cursor: default;
+    }
+    &--active {
+      color: getColor(white);
+      background: getColor(green);
+    }
+  }
+}
+
+/* Product- details*/
+.product__cta-wrapper {
+  display: flex;
+  justify-content: center;
+}

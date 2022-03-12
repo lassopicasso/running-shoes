@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/70984d4de4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="description" content="Here is the products you have selected to the shopping cart." />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <a href="/"><img class="header__logo" src="../images/logo.png" alt="logo" /></a>
+        <nav class="navbar">
+          <div class="navbar__links"></div>
+          <div class="navbar__hamburger"></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Shopping Cart</h1>
+      <div class="cart-page">
+        <div class="selected__container">
+          <div class="selected__products"></div>
+          <div class="selected__total">
+            <div class="selected__total-content">
+              <h2>Total Amount</h2>
+              <div class="selected__total-products"></div>
+              <div class="selected__total-sum"></div>
+              <div class="cart__cta-container"><a href="#!" class="cta cart__cta">Payment</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <i class="fas fa-copyright"> <span>Running Shoes</span></i>
+      </div>
+      <div class="community">
+        <h3>Community</h3>
+        <div class="community__icons">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/cart.js" type="module"></script>
+  </body>
+</html>

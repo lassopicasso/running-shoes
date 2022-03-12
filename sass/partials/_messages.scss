@@ -1,0 +1,19 @@
+.message {
+  position: inline-block;
+  color: getColor(white);
+  max-width: 500px;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.alert-info {
+  background: linear-gradient(getColor(orange), rgba(getColor(orange), 0.65));
+}
+.confirm-info {
+  background: linear-gradient(getColor(green), rgba(getColor(green), 0.65));
+}
+.error-info {
+  background: linear-gradient(getColor(red), rgba(getColor(red), 0.65));
+}

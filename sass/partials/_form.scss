@@ -1,0 +1,100 @@
+.form__container {
+  max-width: 500px;
+  background: getColor(white);
+  height: auto;
+  margin: auto;
+  @extend %main-border;
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    label:not(.file-uploader) {
+      padding-left: 10px;
+      padding-bottom: 5px;
+      cursor: pointer;
+    }
+    label {
+      margin-top: 20px;
+    }
+    input,
+    textarea {
+      @extend %input-form;
+    }
+    textarea {
+      resize: none;
+    }
+    .btn {
+      @extend %cta;
+      margin: 30px auto 0px auto;
+    }
+  }
+}
+
+.input-error {
+  @extend %input-error;
+}
+
+/* Add/Edit Form */
+.feature__title {
+  margin-top: 20px;
+}
+
+.price-feature {
+  display: flex;
+}
+
+/* Price */
+#price {
+  width: 80px;
+}
+
+#price::-webkit-outer-spin-button,
+#price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Price - Firefox */
+#price {
+  -moz-appearance: textfield;
+}
+
+.label-price {
+  display: block;
+}
+.feature__title {
+  margin-left: 10px;
+}
+.feature__product {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#image {
+  display: none;
+}
+.file-uploader {
+  font-family: $font-text;
+  @extend %main-border;
+  padding: 20px;
+  text-align: center;
+  transition: 0.6s;
+  cursor: pointer;
+  color: getColor(white);
+  background: rgba(getColor(blue), 0.6);
+  box-shadow: 0px 3px 3px rgba(getColor(black), 0.2);
+}
+.fake-btn {
+  @extend %main-border;
+  padding: 5px 10px;
+  font-family: $font-text;
+  background: rgba(getColor(white), 0.2);
+  box-shadow: 0px 3px 3px rgba(getColor(black), 0.2);
+  &:hover {
+    background: rgba(getColor(white), 0);
+  }
+}
+.highlight {
+  background: rgba(getColor(blue), 1);
+}

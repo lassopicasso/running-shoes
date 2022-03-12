@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/70984d4de4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="description" content="Shoes page, where you can customize your search criteria to find your perfect match." />
+    <title>Products</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <a href="/"><img class="header__logo" src="../images/logo.png" alt="logo" /></a>
+        <nav class="navbar">
+          <div class="navbar__links"></div>
+          <div class="navbar__hamburger"></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="products-banner"></div>
+      <h1>Shoes for everyone</h1>
+      <input class="product-search" type="text" placeholder="Search for products" />
+      <div class="price__wrapper">
+        <div class="price__field">
+          <div class="price__text">
+            <span>Max Price</span>
+          </div>
+          <div class="price__text infinity">Kr <input type="number" class="input-max" value="500" max="500" step="20" /></div>
+        </div>
+        <div class="price__slider">
+          <div class="price__progress"></div>
+        </div>
+        <div class="price__range">
+          <input type="range" class="range-max" min="0" max="500" value="500" step="20" />
+        </div>
+      </div>
+
+      <div class="sort__container">
+        <span>Sort by:</span>
+        <div class="sort__wrapper">
+          <div>
+            <span class="sort__cta sort__cta--active sort__newest sort__date">New - Old</span>
+            <span class="sort__cta sort__oldest sort__date">Old - New</span>
+          </div>
+          <div>
+            <span class="sort__cta sort__high-price">High Price</span>
+            <span class="sort__cta sort__low-price">Low Price</span>
+          </div>
+        </div>
+      </div>
+      <div class="search-message"></div>
+      <div class="products loader"></div>
+    </main>
+    <footer>
+      <div>
+        <i class="fas fa-copyright"> <span>Running Shoes</span></i>
+      </div>
+      <div class="community">
+        <h3>Community</h3>
+        <div class="community__icons">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/products.js" type="module"></script>
+  </body>
+</html>

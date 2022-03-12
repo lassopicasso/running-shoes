@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/70984d4de4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="description" content="Update or delete a specific product." />
+    <title>Edit Product</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <a href="/"><img class="header__logo" src="../images/logo.png" alt="logo" /></a>
+        <nav class="navbar">
+          <div class="navbar__links"></div>
+          <div class="navbar__hamburger"></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Edit Product</h1>
+      <div class="edit-message"></div>
+      <div class="form__container">
+        <div class="form__error-message"></div>
+        <form>
+          <label for="title" class="label-title">Title:</label>
+          <input type="text" id="title" />
+          <p class="title-error input-error">Minimum 2 characters</p>
+          <div class="price-feature">
+            <div>
+              <label for="price" class="label-price">Price:</label>
+              <input type="number" id="price" />
+              <p class="price-error input-error">Minimum kr 10</p>
+            </div>
+            <div class="feature__product">
+              <span class="feature__title">Feature:</span>
+              <div class="feature__ctas">
+                <span class="feature__cta feature__cta-no">No</span>
+                <span class="feature__cta feature__cta-yes">Yes</span>
+              </div>
+            </div>
+          </div>
+          <label for="product__description" class="label__description">Description:</label>
+          <textarea id="product__description" rows="8"></textarea>
+          <p class="product__description-error input-error">Minimum 10 characters</p>
+          <label class="file-uploader">
+            <input type="file" id="image" class="image-input" accept="image/png, image/jpeg" />
+            <span class="fake-btn">Click</span> <span class="img-text">or drag & drop an image in this area.</span>
+          </label>
+
+          <div class="edit-btn__wrapper">
+            <button type="button" class="btn submit-btn edit-btn update-btn cta">Update</button>
+            <button type="button" class="btn submit-btn edit-btn delete-btn cta">Delete</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <i class="fas fa-copyright"> <span>Running Shoes</span></i>
+      </div>
+      <div class="community">
+        <h3>Community</h3>
+        <div class="community__icons">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/edit.js" type="module"></script>
+  </body>
+</html>

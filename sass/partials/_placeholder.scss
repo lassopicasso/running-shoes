@@ -1,0 +1,72 @@
+/* CTA/Buttons */
+
+%cta {
+  font-size: 20px;
+  font-family: $font-main;
+  color: getColor(White);
+  background: getColor(blue);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px rgba(getColor(black), 0.3);
+  transition: 0.3s;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  min-width: 150px;
+  border: none;
+  &:hover {
+    background: getColor(green);
+  }
+}
+
+%cta-small {
+  background: getColor(white);
+  font-size: 18px;
+  border: 1px solid rgba(getColor(black), 0.4);
+  text-align: center;
+  display: block;
+}
+
+/* Input */
+
+%input-form {
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid getColor(black);
+  font-family: $font-text;
+  font-size: 18px;
+}
+
+%input-error {
+  color: getColor(red);
+  margin: 0px;
+  font-size: 16px;
+  display: none;
+}
+
+/* Page-banner, product-image */
+
+%banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+}
+
+%product-image {
+  background-size: cover;
+  box-shadow: 0px 6px 6px rgba(getColor(black), 0.3);
+  background-position: 50%;
+}
+
+/* Border */
+
+%main-border {
+  border: 1px solid getColor(black);
+  border-radius: 5px;
+}

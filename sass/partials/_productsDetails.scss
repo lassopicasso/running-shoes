@@ -1,0 +1,174 @@
+.main-heading-product {
+  margin-top: 0px;
+}
+
+.product-view__container {
+  background: getColor(green);
+  padding: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.product-view__content {
+  display: flex;
+  background: getColor(white);
+  @extend %main-border;
+  padding: 20px;
+  min-height: 350px;
+  .product-view__img,
+  .product-view__details {
+    flex: 1;
+  }
+}
+
+.product-banner {
+  @extend %banner;
+  height: 350px;
+  background-position: 50%;
+  opacity: 0.5;
+}
+.product-view__img {
+  @extend %product-image;
+  @extend %main-border;
+  cursor: pointer;
+}
+.fa-expand-arrows-alt {
+  font-size: 25px;
+  color: rgba(getColor(grey), 1);
+  position: relative;
+  left: 91%;
+  top: 3%;
+  text-shadow: 0px 3px 6px getColor(black);
+  transition: 0.3s;
+  &:hover {
+    color: getColor(blue);
+  }
+}
+
+.product-view__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 0px;
+  p {
+    margin-top: 0px;
+  }
+  .cta-return {
+    color: getColor(black);
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.product__header {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  h2 {
+    color: getColor(black);
+    text-shadow: none;
+    margin-top: -6px;
+  }
+}
+
+.product__priceAndSocialMedia {
+  display: flex;
+  margin-bottom: 10px;
+  vertical-align: center;
+  height: 40px;
+  .product__price {
+    font-size: 24px;
+    flex: 1;
+  }
+
+  .product__social-media {
+    font-size: 30px;
+  }
+
+  .product__quantity {
+    display: inline-block;
+    select {
+      font-family: $font-main;
+      font-size: 18px;
+      padding-left: 5px;
+      margin-left: 5px;
+    }
+  }
+  .product__social-media,
+  .product__quantity {
+    position: relative;
+    top: -2px;
+  }
+}
+
+.select-error {
+  @extend %input-error;
+}
+
+.product__elements-bottom {
+  margin-bottom: 5px;
+}
+
+.add-response {
+  display: none;
+  position: absolute;
+  text-align: center;
+  min-width: 300px;
+  border-radius: 5px;
+  left: 50%;
+  margin-left: -150px;
+  top: 30vh;
+  color: getColor(white);
+  background: getColor(blue);
+  padding: 5px;
+  font-family: $font-text;
+  box-shadow: 0px 6px 6px rgba(getColor(black), 0.3);
+}
+
+/*Image focus */
+.focus-img-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(85, 85, 85, 0.8);
+  padding: 100%;
+  z-index: 10;
+}
+
+.focus-img {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 600px;
+  width: 80%;
+  max-width: 700px;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 20;
+  @extend %main-border;
+}
+
+.fa-times-circle {
+  position: relative;
+  font-size: 40px;
+  left: 94%;
+  top: 0.5%;
+  cursor: pointer;
+  color: #e8e8e8;
+  background-color: #000000;
+  border-radius: 20px;
+  transition: 0.6s;
+  opacity: 0.6;
+}
+
+.fa-times-circle:hover {
+  color: getColor(blue);
+  opacity: 1;
+  box-shadow: 0px 6px 6px rgba(getColor(black), 0.3);
+}
