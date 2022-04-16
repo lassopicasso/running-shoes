@@ -8,8 +8,10 @@ const banner = document.querySelector(".homepage-banner");
 const carousel = document.querySelector(".carousel__wrapper");
 
 /*Welcome message*/
-
-alert("Welcome! Having some trouble with database. Wait 10 seconds and refresh. :)");
+if (localStorage.getItem("firstTime") == null) {
+  alert("Welcome! Having some trouble with database. Wait 10 seconds and refresh. :)");
+  localStorage.setItem("firstTime", "done");
+}
 
 /*Banner*/
 (async function () {

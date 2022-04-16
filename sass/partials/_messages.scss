@@ -8,6 +8,10 @@
   border-radius: 5px;
 }
 
+alert {
+  background: red;
+}
+
 .alert-info {
   background: linear-gradient(getColor(orange), rgba(getColor(orange), 0.65));
 }
