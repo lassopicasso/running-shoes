@@ -7,6 +7,10 @@ navbar();
 const banner = document.querySelector(".homepage-banner");
 const carousel = document.querySelector(".carousel__wrapper");
 
+/*Welcome message*/
+
+alert("Welcome! Having some trouble with database. Wait 10 seconds and refresh. :)");
+
 /*Banner*/
 (async function () {
   try {
