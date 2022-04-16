@@ -9,7 +9,7 @@ const carousel = document.querySelector(".carousel__wrapper");
 
 /*Welcome message*/
 if (localStorage.getItem("firstTime") == null) {
-  alert("Welcome! Having some trouble with database. Wait 5 seconds plz, if not: refresh. :)");
+  alert("Welcome! Having some trouble with database. Give it 5 seconds :) ");
   localStorage.setItem("firstTime", "done");
 }
 
