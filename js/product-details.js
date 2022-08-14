@@ -12,6 +12,7 @@ const productDetails = document.querySelector(".product-view__details");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
+console.log(params);
 const id = params.get("id");
 const productUrl = `${productsUrl}?id=${id}`;
 
