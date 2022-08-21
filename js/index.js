@@ -9,7 +9,7 @@ const carousel = document.querySelector(".carousel__wrapper");
 
 /*Welcome message*/
 if (localStorage.getItem("firstTime") == null) {
-  alert("Welcome! Currently having some trouble with the database. Give it 30-60 seconds and then refresh. The website also offers an login as admin, where admin can add/update/remove products. Atm you need to contact me at lars.walderhaug@hotmail.com if you want to test this.");
+  alert("Welcome! Currently having some trouble with API. Give it 30-60 seconds and then refresh. :) The website also offers admin tools: lars.walderhaug@hotmail.com");
   localStorage.setItem("firstTime", "done");
 }
 
