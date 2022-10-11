@@ -56,7 +56,9 @@ git clone git@github.com:lassopicasso/running-shoes.git
 
 2. To run the app:
 
+```bash
 Right click and select "Open with Live Server" on index.html file, located in root folder.
+```
 
 3. Login credentials to restricted pages
 
