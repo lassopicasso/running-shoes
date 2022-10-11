@@ -1,4 +1,4 @@
-# Running Shoes
+# Running Shoes - Semester Project 2
 
 ![Products](/images/products.jpg?raw=true "Products")
 
